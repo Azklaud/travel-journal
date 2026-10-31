@@ -1,0 +1,11 @@
+.day-pill.has-title{flex-basis:96px;padding-bottom:9px}
+.day-pill .day-title{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;font-weight:800;font-style:normal;margin-top:4px;line-height:1.45}
+.journal-heading-copy{min-width:0;flex:1}
+.journal-heading-copy h2{overflow-wrap:anywhere;line-height:1.4}
+.journal-date{font-size:12px;color:#a4947a;margin:6px 0 0}
+.journal-tools{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.journal-edit{border:1px dashed #d9c6a7;border-radius:9px;padding:8px 10px;background:#fff9ed;color:#94754f;display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:800;white-space:nowrap}
+.journal-edit:hover{background:#f8efd9}
+.journal-edit svg{width:14px;height:14px}
+.journal-tools .sticker{margin-right:0}
+@media(max-width:600px){.journal-heading{gap:7px}.journal-heading-copy h2{font-size:18px}.journal-tools{flex-direction:column-reverse;align-items:flex-end}.journal-tools .sticker{font-size:22px}.journal-edit{padding:7px}.journal-edit span{display:none}}

@@ -1,0 +1,10 @@
+.day-notes-box{background:#fffaf0;border:1px solid #eddcba;border-radius:14px;padding:15px;margin:0 0 24px;box-shadow:0 3px 12px #9a74470d}
+.day-notes-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:11px}
+.day-notes-heading h3{font-size:14px;color:#786045;margin:0 0 4px}
+.day-notes-heading p{font-size:11px;color:#ad9472;margin:0}
+.day-notes-status{white-space:nowrap;font-size:10px;color:#5a9485;background:#e6f4eb;border-radius:20px;padding:4px 9px}
+.day-notes-label{display:block;font-size:11px;font-weight:700;color:#90785a;margin:0 0 7px}
+.day-notes-box textarea{display:block;width:100%;min-height:130px;resize:vertical;border:1px solid #e6d7b9;border-radius:10px;background:#fffefe;padding:12px 13px;font-size:12px;line-height:1.9;color:#5f574e;outline:0;overflow-wrap:anywhere;box-sizing:border-box}
+.day-notes-box textarea:focus{border-color:#bda479;box-shadow:0 0 0 3px #ecdcb97d}
+.day-notes-box textarea::placeholder{color:#bcb0a1}
+@media(max-width:650px){.day-notes-box{padding:12px;margin-bottom:19px}.day-notes-box textarea{min-height:145px;font-size:13px}}

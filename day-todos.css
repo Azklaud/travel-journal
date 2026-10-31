@@ -1,0 +1,24 @@
+.day-todos-box{background:#f1faf7;border:1px solid #cce7db;border-radius:14px;padding:16px;margin:0 0 15px;box-shadow:0 3px 12px #3b82620b}
+.day-todos-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px}
+.day-todos-heading h3{font-size:15px;color:#366e5b;margin:0 0 5px}
+.day-todos-heading p{font-size:11px;color:#749487;margin:0;line-height:1.6}
+.day-todos-progress{white-space:nowrap;font-size:11px;font-weight:700;color:#42866d;background:#deefe5;border-radius:30px;padding:5px 10px}
+.day-todos-list{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.day-todo-item{display:flex;align-items:flex-start;gap:8px;justify-content:space-between;background:white;border:1px solid #e0eee8;border-radius:10px;padding:11px 10px;transition:background .15s}
+.day-todo-item.is-done{background:#e9f3ed}
+.day-todo-main{display:flex;align-items:flex-start;gap:11px;flex:1;min-width:0;cursor:pointer}
+.day-todo-main input[type=checkbox]{width:20px;height:20px;min-width:20px;margin:2px 0 0;accent-color:#398972;cursor:pointer}
+.day-todo-text{display:block;flex:1;min-width:0;overflow-wrap:anywhere}
+.day-todo-text strong{display:block;font-size:13px;font-weight:700;line-height:1.65;color:#395d50}
+.day-todo-text small{display:block;white-space:pre-line;font-size:11px;line-height:1.65;color:#657d73;margin-top:3px}
+.day-todo-item.is-done .day-todo-text strong{text-decoration:line-through;opacity:.58}
+.day-todo-link{display:inline-block;font-size:11px;color:#247b64;font-weight:700;margin-top:6px;text-underline-offset:3px}
+.day-todo-tools{display:flex;gap:2px;flex-shrink:0}
+.day-todo-tools button{width:26px;height:27px;display:grid;place-items:center;border:none;background:transparent;color:#79968b;cursor:pointer;border-radius:6px;padding:5px}
+.day-todo-tools button:hover{background:#d7ece0;color:#2f6f56}
+.day-todo-tools svg{width:14px;height:14px}
+.day-todos-add{margin-top:11px;display:inline-flex;align-items:center;gap:7px;color:#34795f;font-weight:700;background:transparent;border:1px dashed #96c6ae;border-radius:8px;padding:9px 13px;font-family:inherit;font-size:12px;cursor:pointer}
+.day-todos-add:hover{background:#e2f2e9}
+.day-todos-add svg{width:15px;height:15px}
+.day-todos-empty{color:#82988d;font-size:12px;line-height:1.6}
+@media(max-width:650px){.day-todos-box{padding:12px}.day-todo-item{padding:10px 8px}.day-todo-main{gap:8px}.day-todo-tools button{width:23px}.day-todo-text strong{font-size:13px}}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f7f4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="旅行手帳">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="description" content="旅行手帳：記錄每日行程、圖片手帳、旅費、票券及預訂。交大波迪猴子製作。">
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="apple-touch-icon" href="./icon-512.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./day-titles.css">
+  <link rel="stylesheet" href="./day-notes.css">
+  <link rel="stylesheet" href="./day-todos.css">
+  <link rel="stylesheet" href="./ticket-expense.css">
+  <link rel="stylesheet" href="./time-inputs.css">
+  <link rel="stylesheet" href="./poster.css">
+  <title>旅行手帳｜交大波迪猴子製作</title>
+</head>
+<body>
+  <svg aria-hidden="true" class="icon-sprite" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.7 8.3-2.5 4.9-4.9 2.5 2.5-4.9z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="15" rx="3"/><path d="M3 9h18M16 15h2"/></symbol>
+    <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-3a2 2 0 0 0 0-4zM13 6v2M13 11v2M13 16v2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4zM22 2 11 13"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 4a4 4 0 0 1 0 8M22 20v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><path d="m4 20 4-.8L19.3 7.9a2 2 0 0 0-2.8-2.8L5.2 16.4zM15 6.5l2.8 2.8"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14M10 11v6M14 11v6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M4 17v4h16v-4"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M13 5h6v6M19 5l-9 9M19 14v5H5V5h5"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4 8h13v7a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6zM17 9h2a3 3 0 0 1 0 6h-2M3 3h17"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主要導覽">
+      <div class="brand"><div class="brand-symbol"><svg><use href="#i-compass"/></svg></div><div><strong>旅行手帳</strong><small>交大波迪猴子製作</small></div></div>
+      <div class="sidebar-label">WORKSPACE</div>
+      <nav id="desktop-nav" class="nav-links"></nav>
+      <div class="sidebar-label trip-sidebar-label">YOUR TRIPS</div>
+      <div id="sidebar-trips" class="sidebar-trips"></div>
+      <button class="sidebar-new" data-action="new-trip"><svg><use href="#i-plus"/></svg> 建立新旅行</button>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-backup"><div class="sidebar-backup-icon"><svg><use href="#i-download"/></svg></div><div><strong>為旅程留一份備份</strong><p>匯出或匯入 JSON 備份檔</p></div><button data-action="export" class="link-button">匯出資料 <span>→</span></button><button data-action="import" class="link-button" style="margin-left:16px">匯入備份 <span>→</span></button></div>
+      <div class="sidebar-footer">交大波迪猴子製作</div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar"><div class="crumb"><span>MY TRAVEL JOURNAL</span><svg><use href="#i-chevron"/></svg><strong id="topbar-crumb">總覽</strong></div><div class="top-actions"><span class="local-pill"><span></span> 資料保存在此裝置</span><button class="round-button" data-action="import" aria-label="匯入備份" title="匯入 JSON 備份"><svg><use href="#i-upload"/></svg></button><button class="round-button" data-action="export" aria-label="匯出備份" title="下載 JSON 備份"><svg><use href="#i-download"/></svg></button></div></header>
+      <div id="app-content" class="main-content"></div>
+    </main>
+  </div>
+
+  <nav id="mobile-nav" class="mobile-nav" aria-label="手機導覽"></nav>
+  <dialog id="app-dialog" class="app-dialog"><div id="dialog-content"></div></dialog>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./poster.js" defer></script>
+  <script src="./poster-page.js" defer></script>
+  <script src="./app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.poster-intro{margin-bottom:19px}
+.poster-day-strip{display:flex;gap:9px;overflow-x:auto;margin:0 0 21px;padding:3px 2px 12px;scrollbar-width:thin}
+.poster-day-pill{flex:0 0 80px;border:1px solid #e8e3df;background:white;border-radius:15px;padding:11px 9px;color:#858391;text-align:center}
+.poster-day-pill small{font-size:10px;display:block;font-weight:800;letter-spacing:1px}
+.poster-day-pill strong{display:block;font-size:18px;line-height:1.7}
+.poster-day-pill.active{background:#575a8e;color:#fff;border-color:#575a8e;box-shadow:0 9px 15px #55578c22}
+.poster-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;align-items:start;gap:22px}
+.poster-frame{background:white;border:1px solid #eee9e0;border-radius:22px;box-shadow:0 10px 35px #322a3814;padding:20px;min-width:0}
+.poster-frame-head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 14px}
+.poster-frame-head h2{font-size:18px;line-height:1.5;margin:2px 0 0;letter-spacing:-.3px}
+.poster-kicker{font-size:10px;letter-spacing:1.6px;color:#b89362;font-weight:800}
+.poster-swatch{border:1px dashed #d5bf9e;color:#a38b72;border-radius:20px;padding:7px 10px;white-space:nowrap;font-size:10px;font-weight:800}
+.poster-image{display:block;width:100%;height:auto;border-radius:11px;background:#f8f4ed;box-shadow:0 5px 18px #867f6a18}
+.poster-side{position:sticky;top:20px;background:#fcfaf7;border:1px solid #ece4d9;border-radius:19px;padding:20px}
+.poster-side-icon{font-size:33px}
+.poster-side h3{font-size:16px;margin:10px 0 6px}
+.poster-side p{font-size:12px;line-height:1.85;color:#87838a;margin:0 0 17px}
+.poster-main-action{width:100%;white-space:normal;text-align:center;margin-bottom:9px}
+.poster-tip{font-size:11px;line-height:1.8;color:#807e89;background:white;border-radius:12px;padding:11px 12px;margin-top:12px}
+.brand strong{letter-spacing:-.7px}
+@media(max-width:900px){.poster-layout{grid-template-columns:1fr}.poster-side{position:static;order:-1}.poster-side-icon{display:none}.poster-side h3{margin:0 0 6px}.poster-side .poster-main-action{display:inline-flex;width:auto;margin-right:6px}}
+@media(max-width:850px){.mobile-nav{grid-template-columns:repeat(5,minmax(0,1fr))}.mobile-nav button{font-size:10px;min-width:0}.mobile-nav button span{white-space:nowrap}}
+@media(max-width:650px){.poster-layout{gap:13px}.poster-frame{padding:12px;border-radius:16px}.poster-frame-head{padding:2px 4px 13px}.poster-frame-head h2{font-size:14px}.poster-swatch{font-size:9px;padding:6px}.poster-side{padding:15px}.poster-side h3{font-size:14px}.poster-side p{margin-bottom:12px}.poster-side .poster-main-action{width:100%;margin:0 0 9px}.poster-day-pill{flex-basis:72px}}

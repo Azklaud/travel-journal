@@ -1,0 +1,67 @@
+.currency-summary {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.currency-summary .money-card {
+  min-height: 132px;
+}
+.dual-currency-total {
+  font-size: clamp(13px, 1.7vw, 21px) !important;
+  line-height: 1.4 !important;
+  overflow-wrap: anywhere;
+}
+.currency-separator {
+  color: #aaa7b2;
+  padding: 0 5px;
+}
+.ticket-summary {
+  background: #f5f2fc;
+  border: 1px solid #e9e4f4;
+  border-radius: 14px;
+  color: #696b85;
+  padding: 13px 17px;
+  margin: 7px 0 16px;
+  font-size: 12px;
+}
+.ticket-summary strong {
+  color: #655b9c;
+}
+.ticket-summary span {
+  display: block;
+  margin-top: 4px;
+  color: #9191a0;
+  font-size: 11px;
+}
+.ticket-filters {
+  margin-bottom: 18px;
+}
+.ticket-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.ticket-status {
+  display: inline-flex;
+  align-items: center;
+  background: #f0f1f8;
+  color: #535676;
+  padding: 5px 9px;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 750;
+}
+.ticket-status.status-owned { background: #e6f5f0; color: #317b62; }
+.ticket-status.status-reserve { background: #fff0eb; color: #b65a48; }
+.ticket-status.status-online { background: #ecf2fc; color: #4d72aa; }
+.ticket-status.status-onsite { background: #fff5e5; color: #a2772c; }
+.ticket-status.status-included { background: #eeeafa; color: #6c5bab; }
+.ticket-status.status-conditional { background: #f1f2f2; color: #777e81; }
+.ticket-status.status-complete { background: #e1f5e9; color: #2c8658; }
+.booking-card .small-muted {
+  white-space: pre-line;
+  line-height: 1.55;
+}
+@media (max-width: 700px) {
+  .currency-summary { grid-template-columns: 1fr; }
+  .ticket-filters { gap: 7px; }
+}

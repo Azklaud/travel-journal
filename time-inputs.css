@@ -1,0 +1,11 @@
+.field input[data-clock-entry]{
+  font-size:16px;
+  font-variant-numeric:tabular-nums;
+  letter-spacing:.08em;
+  font-weight:700;
+}
+.field input[data-clock-entry]::placeholder{
+  font-size:13px;
+  font-weight:400;
+  letter-spacing:0;
+}
